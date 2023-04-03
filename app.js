@@ -12,17 +12,18 @@ camera.position.z = 1;
 
 const scene = new THREE.Scene();
 
-const geometry = new THREE.BoxGeometry(0.2, 0.2, 0.2);
+const geometry = new THREE.PlaneGeometry(1,1);
 const material = new THREE.MeshNormalMaterial();
+material.side = THREE.DoubleSide;
 
 const mesh = new THREE.Mesh(geometry, material);
 scene.add(mesh);
 
-const canvas = document.getElementById("container");
-const renderer = new THREE.WebGLRenderer({ antialias: true, canvas });
+
+const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setAnimationLoop(animation);
-document.body.appendChild(renderer.domElement);
+document.getElementById("container").appendChild(renderer.domElement);
 
 // animation
 
