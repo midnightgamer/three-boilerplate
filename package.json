@@ -1,0 +1,27 @@
+{
+  "name": "three-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/midnightgamer/three-boilerplate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/midnightgamer/three-boilerplate/issues"
+  },
+  "homepage": "https://github.com/midnightgamer/three-boilerplate#readme",
+  "dependencies": {
+    "three": "^0.151.3",
+    "vite": "^4.2.1",
+    "vite-plugin-glsl": "^1.1.2"
+  }
+}
